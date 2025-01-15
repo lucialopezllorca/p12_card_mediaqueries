@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p10_card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Serif+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        /*TYPOGRAPHY*/
+        .raleway{
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        h2{
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #A1A3A4;
+            letter-spacing: 3px;
+        }
+        h1{
+            text-transform: capitalize;
+            font-size: 33px;
+            line-height: 110%;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #585C3A;
+            letter-spacing: 3px;
+        }
+        body{
+            background-color: #3f779d;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            width: 1100px;
+            margin: auto;
+        }
+        .card_photographer{
+            display: flex;
+            box-shadow: black 5px 5px 15px;
+            flex-direction: row;
+            flex-grow: 1;
+            width: 500px;
+            height: 300px;
+            background-color: white;
+        }
+        .r1{
+            display: flex;
+            flex-direction: row;
+            flex-grow: .5;
+            align-items: start;
+            padding: 36px 40px;
+            width: 100%;
+            height: 60px;
+        }
+        .r2{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            padding: 10px 36px;
+            width: 100%;
+            flex-grow: 1;
+            height: 107px;
+        }
+        .r3{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 30px 36px;
+            flex-grow: .5;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        header{
+            width: 50%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        header img{
+            width: 100%;
+            height: 100%;
+        }
+        header, main{
+            width: 50%;
+            height: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+                .card_photographer{
+                    flex-direction: column;
+                    width: 250px;
+                    height: 600px;
+                }
+                .container{
+                    width: 100%;
+                }
+                header, main{
+                width: 100%;
+                height: 50%;
+                }
+                header{
+                    object-fit: fill;
+                }
+               
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="card_photographer">
+            <header>
+                <img src="img/image.jpg" alt="">
+            </header>
+            <main>
+                <div class="r1">
+                    <h2 class="roboto-regular">by Tommy Jackson</h2>
+                </div>
+
+                <div class="r2">
+                    <h1 class="raleway">how to Photograph Inside a Cave</h1>
+                </div>
+
+                <div class="r3">
+                    <p class="roboto-bold">read</p>
+                    <div class="icon">
+                        <img src="img/arrow.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+</body>
+</html>
